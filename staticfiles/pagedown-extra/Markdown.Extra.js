@@ -304,6 +304,8 @@
    * Attribute Blocks                                               *
    *****************************************************************/
 
+  // TODO: use sentinels. Should we just add/remove them in doConversion?
+  // TODO: better matches for id / class attributes
   var attrBlock = "\\{[ \\t]*((?:[#.][-_:a-zA-Z0-9]+[ \\t]*)+)\\}";
   var hdrAttributesA = new RegExp("^(#{1,6}.*#{0,6})[ \\t]+" + attrBlock + "[ \\t]*(?:\\n|0x03)", "gm");
   var hdrAttributesB = new RegExp("^(.*)[ \\t]+" + attrBlock + "[ \\t]*\\n" +
@@ -328,6 +330,8 @@
   // Extract FCB attribute blocks, move them above the element they will be
   // applied to, and hash them for later.
   Markdown.Extra.prototype.hashFcbAttributeBlocks = function(text) {
+    // TODO: use sentinels. Should we just add/remove them in doConversion?
+    // TODO: better matches for id / class attributes
 
     var self = this;
     function attributeCallback(wholeMatch, pre, attr) {
@@ -441,6 +445,7 @@
         else align[i] = '';
       }
 
+      // TODO: parse spans in header and rows before splitting, so that pipes
       // inside of tags are not interpreted as separators
       var headers = header.split(/ *[|] */);
       var colCount = headers.length;

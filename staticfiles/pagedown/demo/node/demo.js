@@ -1,3 +1,4 @@
+// NOTE: This is just a demo -- in a production environment,
 // be sure to spend a few more thoughts on sanitizing user input.
 // (also, you probably wouldn't use a get request)
 
