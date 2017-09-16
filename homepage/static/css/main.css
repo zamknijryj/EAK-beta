@@ -16,7 +16,7 @@ body {
     border: 2px solid #fff;
     font-weight: bold;
     margin: 5px;
-    transition: 0.5s
+    transition: 0.5s;    
 }
 
 .eak-link:hover {
