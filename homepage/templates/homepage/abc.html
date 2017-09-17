@@ -1,4 +1,5 @@
 {% extends "homepage/base.html" %}
+{% load staticfiles %}
 
 {% block title %} ABC | {{ block.super }}{% endblock %}
 
@@ -19,10 +20,10 @@
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #eee; border-right: 1px solid #eee">
-                            <img src="http://vignette3.wikia.nocookie.net/micropedia/images/8/86/EAK-god%C5%82o.png/revision/latest/scale-to-width-down/353?cb=20150827121949" class="img-fluid mx-auto d-block" width="125" alt="godło eak">
+                            <img src="{% static 'img/abc/EAK-godlo.png' %}" class="img-fluid mx-auto d-block" width="125" alt="godło eak">
                         </td>
                         <td style="border-bottom: 1px solid #eee">
-                            <img src="http://vignette1.wikia.nocookie.net/micropedia/images/1/1f/EAK-flaga.png/revision/latest/scale-to-width-down/640?cb=20150827121929" class="img-fluid mx-auto d-block mt-5" width="170" alt="flaga eak">
+                            <img src="{% static 'img/abc/EAK-flaga.png' %}" class="img-fluid mx-auto d-block mt-5" width="170" alt="flaga eak">
                         </td>
                     </tr>
                     <tr>
@@ -38,7 +39,7 @@
                             <p class="ml-4">Państwo</p>
                         </td>
                         <td style="border-top: 1px solid #eee;">
-                            <p class="ml-4"> <img src="http://vignette4.wikia.nocookie.net/micropedia/images/b/b1/Flaga_elderland.png/revision/latest?cb=20061125130226" class="mr-3 img-fluid" width=30 alt="">Elderland</p>
+                            <p class="ml-4"> <img src="{% static 'img/abc/Flaga_elderland.png' %}" class="mr-3 img-fluid" width=30 alt="">Elderland</p>
                         </td>
                     </tr>
                     <tr>
@@ -91,7 +92,7 @@
                             <p class="ml-4">Logo</p>
                         </td>
                         <td style="border-top: 1px solid #eee;">
-                            <img src="http://vignette4.wikia.nocookie.net/micropedia/images/e/e5/Logo_EAK.png/revision/latest/scale-to-width-down/342?cb=20150827141558" width="80" class="img-fluid ml-4" alt="">
+                            <img src="{% static 'img/abc/Logo_EAK.png' %}" width="80" class="img-fluid ml-4" alt="">
                         </td>
                     </tr>
 
