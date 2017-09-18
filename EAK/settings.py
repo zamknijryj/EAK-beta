@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'pagedown',
     # MY APPS
     'homepage',
+    'aktualnosci',
     # DJANGO APPS
     'django.contrib.admin',
     'django.contrib.auth',
