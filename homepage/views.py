@@ -12,3 +12,11 @@ class RejstrZolnierzy(TemplateView):
 
 class AbcEak(TemplateView):
     template_name = 'homepage/abc.html'
+
+
+class Majordom(TemplateView):
+    template_name = 'homepage/majordom_koronny.html'
+
+
+class ObronaTerytorialna(TemplateView):
+    template_name = 'homepage/obrona_terytorialna.html'
