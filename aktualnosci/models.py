@@ -27,7 +27,7 @@ class Post(models.Model):
         ordering = ['-publish']
 
     def get_absolute_url(self):
-        return reverse('test', args=[self.publish.year,
+        return reverse('detail', args=[self.publish.year,
                                      self.publish.strftime('%m'),
                                      self.publish.strftime('%d'),
                                      self.slug])

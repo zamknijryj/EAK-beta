@@ -10,7 +10,7 @@
                 <hr class="my-4">
                 <p>Zostań członkiem naszej armii już dziś !</p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Zapisz się !</a>
+                <a class="btn btn-primary btn-lg" href="{% url 'rekrutacja' %}" role="button">Zapisz się !</a>
                 </p>
             </div>
         </div>
@@ -34,12 +34,12 @@
 
         </div>
         <div class="col-md-4 mb-5 mx-auto wow bounceIn">
-            <a href="#">
+            <a href="{% url 'sily-operacyjne' %}">
                 <img src="{% static 'img/homepage/krolewskie-sily-operacyjne.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
             </a>
         </div>
         <div class="col-md-4 mb-5 wow bounceIn">
-            <a href="#">
+            <a href="{% url 'zakon' %}">
                 <img src="{% static 'img/homepage/zakon-rycerski.png' %}" class="img-fluid rounded mx-auto d-block" alt="">
             </a>
         </div>

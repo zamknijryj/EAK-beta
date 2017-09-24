@@ -12,13 +12,7 @@ class Aktualnosci(ListView):
         object_list = Post.objects.filter(status='publish')
         return object_list
 
-
-class AktualnosciDetail(DetailView):
-    template_name = 'aktualnosci/detail.html'
-    model = Post
-
-
-def test(request, year, month, day, post):
+def detail(request, year, month, day, post):
     post = get_object_or_404(Post,
                              slug=post,
                              publish__year=year,
