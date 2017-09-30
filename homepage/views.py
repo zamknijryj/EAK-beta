@@ -38,3 +38,8 @@ class SilyOperacyjne(TemplateView):
 
 class ZakonRycerzy(TemplateView):
     template_name = 'homepage/zakon.html'
+
+
+class Gwardia(TemplateView):
+    template_name = 'homepage/gwardia.html'
+
